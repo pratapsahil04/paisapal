@@ -314,16 +314,92 @@ init_db()
 
 st.markdown("""
 <style>
-.stApp {background: linear-gradient(135deg, #f7f9fc 0%, #eef3f8 100%);}
-.block-container {padding-top: 2rem; max-width: 1200px;}
-.hero {padding: 1.3rem 1.5rem; border-radius: 18px; background: #14213d; color: white; margin-bottom: 1rem;}
-.hero h1 {margin:0; color:white;}
-.hero p {margin:.35rem 0 0 0; color:#dce6f5;}
-div[data-testid="stMetric"] {background:white; border:1px solid #e4eaf2; padding:1rem; border-radius:14px;}
+.stApp {
+    background: linear-gradient(135deg, #f7f9fc 0%, #eef3f8 100%);
+    color: #172033;
+}
+
+.block-container {
+    padding-top: 2rem;
+    max-width: 1200px;
+}
+
+.hero {
+    padding: 1.3rem 1.5rem;
+    border-radius: 18px;
+    background: #14213d;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.hero h1 {
+    margin: 0;
+    color: #ffffff !important;
+}
+
+.hero p {
+    margin: 0.35rem 0 0;
+    color: #dce6f5 !important;
+}
+
+div[data-testid="stMetric"] {
+    background: #ffffff;
+    border: 1px solid #dce3ed;
+    padding: 1rem;
+    border-radius: 14px;
+}
+
+div[data-testid="stMetricLabel"] {
+    color: #475569 !important;
+}
+
+div[data-testid="stMetricValue"] {
+    color: #14213d !important;
+}
+
+.stApp h1,
+.stApp h2,
+.stApp h3,
+.stApp p,
+.stApp label,
+.stApp [data-testid="stMarkdownContainer"] {
+    color: #172033;
+}
+
+div[data-testid="stChatMessage"] {
+    background: #ffffff;
+    border: 1px solid #dce3ed;
+    border-radius: 12px;
+    padding: 0.75rem;
+}
+
+div[data-testid="stChatMessage"] p,
+div[data-testid="stChatMessage"] li {
+    color: #172033 !important;
+}
+
+button[data-baseweb="tab"] {
+    color: #334155 !important;
+}
+
+button[data-baseweb="tab"][aria-selected="true"] {
+    color: #b91c1c !important;
+    font-weight: 600;
+}
+
+section[data-testid="stSidebar"] {
+    background: #f0f3f8;
+}
+
+section[data-testid="stSidebar"] p,
+section[data-testid="stSidebar"] label {
+    color: #172033 !important;
+}
 </style>
+
 <div class="hero">
-<h1>💸 PaisaPal</h1>
-<p>Your personal expense tracker and AI budget coach.</p>
+    <h1>💸 PaisaPal</h1>
+    <p>Your personal expense tracker and AI budget coach.</p>
 </div>
 """, unsafe_allow_html=True)
 
